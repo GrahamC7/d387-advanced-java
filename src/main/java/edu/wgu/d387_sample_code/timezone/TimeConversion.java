@@ -19,7 +19,7 @@ public class TimeConversion {
         String timeLayout = "hh:mm a";
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern(timeLayout);
 
-        String timeDisplay = ET.format(timeFormatter) + " ET /" + MT.format(timeFormatter) + " MT /" + UTC.format(timeFormatter) + " UTC /";
+        String timeDisplay = ET.format(timeFormatter) + " ET / " + MT.format(timeFormatter) + " MT / " + UTC.format(timeFormatter) + " UTC";
         return timeDisplay;
     }
 }
